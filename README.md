@@ -5,4 +5,15 @@
 
 ## 使用说明
 
-待完善
+请确保环境已安装：
+
+- Python3
+- Python Virtualenv库
+
+```bash
+cd ${PROJECT_DIR}
+virtualenv venv						# 初始化虚拟环境
+source activate						# 切换虚拟环境
+pip3 install -r requirements.txt	# 安装必要库
+jupyter notebook					# 进去后运行src.ipynb即可
+```
