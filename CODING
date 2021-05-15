@@ -1,0 +1,34 @@
+techHW Python 编码风格
+
+我们的代码中有以下约定：
+
+* 函数参数逗号留一个空格，如：
+func(arg1, arg2, arg3)
+
+* 各种数据结构，数据太多时，请效仿json格式编写，如：
+data = [
+    {
+        "name": "Peanut1",
+        "age": 21,
+        "school": "JNU"
+    },
+    {
+        "name": "Peanut2",
+        "age": 21,
+        "school": "JNU"
+    }
+]
+
+* 导入包时，请在第一个Cell导入，其他cell禁止导入包，且导入顺序为：
+import 内置库
+import 外部库
+from xxx import Bar # 一个from import导入一个组件
+from xxx import Foo
+import 自己的库
+
+* 函数key参数太多时，请务必：
+func(
+    arg1="text",
+    num=1,
+    path="./to/path"
+)
